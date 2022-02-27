@@ -1,0 +1,101 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+
+}
+
+*, *::before, *::after { 
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0 auto;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: $veryLightGray;
+    font-size: .9375rem;
+    a, a:hover, a:visited{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-top: 5.625rem;
+    margin-bottom: 5.625rem;
+
+
+    @include breakpoint-up(large){
+        flex-direction: row;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+}
+
+.item{
+    width: 18.8125rem;
+    height: 31.25rem;
+    padding: 3rem;
+    @include breakpoint-up(large){
+        width: 19.0625rem;
+        height: 31.25rem;
+    }
+    h1{
+        font-family: 'Big Shoulders Display', cursive;
+        padding-bottom: 2.5rem;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 2.1875rem;
+        line-height: 1;
+    }
+    p{
+        
+        margin: 0;
+        margin-bottom: 5.375rem;
+        font-weight: 300;
+    }
+    img{
+        padding-bottom: 2.5rem;
+    }
+    a{
+        border: solid 2px white;
+        display: inline-block;
+        padding: 1rem 1.8125rem;
+        border-radius: 1.875rem;
+        margin: 0;
+        margin-bottom: 2.875rem;
+        transition: all 200ms ease-in-out;
+        &:hover{
+            background-color: white;
+        }
+
+    }
+    &1{
+        background-color: $brightOrange;
+        a:hover{
+            color: $brightOrange;
+        }
+    }
+    &2{
+        background-color: $darkCyan;
+        a:hover{
+            color: $darkCyan;
+        }
+    }
+    &3{
+        background-color: $veryDarkCyan;
+        a:hover{
+            color: $veryDarkCyan;
+        }
+    }
+}

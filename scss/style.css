@@ -1,0 +1,132 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  color: white;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #f2f2f2;
+  font-size: .9375rem;
+}
+
+body a, body a:hover, body a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 5.625rem;
+  margin-bottom: 5.625rem;
+}
+
+@media (min-width: 64em) {
+  section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0;
+  }
+}
+
+.item {
+  width: 18.8125rem;
+  height: 31.25rem;
+  padding: 3rem;
+}
+
+@media (min-width: 64em) {
+  .item {
+    width: 19.0625rem;
+    height: 31.25rem;
+  }
+}
+
+.item h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  padding-bottom: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 2.1875rem;
+  line-height: 1;
+}
+
+.item p {
+  margin: 0;
+  margin-bottom: 5.375rem;
+  font-weight: 300;
+}
+
+.item img {
+  padding-bottom: 2.5rem;
+}
+
+.item a {
+  border: solid 2px white;
+  display: inline-block;
+  padding: 1rem 1.8125rem;
+  border-radius: 1.875rem;
+  margin: 0;
+  margin-bottom: 2.875rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.item a:hover {
+  background-color: white;
+}
+
+.item1 {
+  background-color: #e38826;
+}
+
+.item1 a:hover {
+  color: #e38826;
+}
+
+.item2 {
+  background-color: #006970;
+}
+
+.item2 a:hover {
+  color: #006970;
+}
+
+.item3 {
+  background-color: #004241;
+}
+
+.item3 a:hover {
+  color: #004241;
+}
+/*# sourceMappingURL=style.css.map */
